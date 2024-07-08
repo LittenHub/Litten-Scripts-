@@ -1,0 +1,129 @@
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local window = kavoUi.CreateLib("|| ★ Litten hub ★ ||","BloodTheme")
+
+---Tabs
+
+local Tab1 = window:NewTab("Blade Ball")
+local Tab1Section = Tab1:NewSection("Main Scripts")
+local Tab2 = window:NewTab("Prison Life")
+local Tab2Section = Tab2:NewSection("Main Scripts")
+local Tab3 = window:NewTab("Blox Fruit")
+local Tab3Section = Tab3:NewSection("Main Scripts")
+local Tab4 = window:NewTab("General Scripts")
+local Tab4Section = Tab4:NewSection("Main Scripts")
+local Tab5 = window:NewTab("Gun Ground FFA")
+local Tab5Section = Tab5:NewSection("Main Scripts")
+local Tab9 = window:NewTab("Credits")
+local Tab9Section = Tab9:NewSection("This Scripts Made By Fathan Preset")
+
+---Buttons
+
+Tab1Section:NewButton("Visual hub","Blade ball scripts",function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5945467f3b9388503ca653c0ea49cba.lua"))()
+end)
+
+Tab1Section:NewButton("Bedol hub","Blade ball scripts",function()
+_G.UI_Size = 200 -- config ui size
+loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
+end)
+
+Tab1Section:NewButton("Plutonium hub","Blade ball scripts",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))()
+end)
+
+Tab1Section:NewButton("FFJ hub","Blade ball scripts",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Tevfn/Visual-Ball-By-Tevfn/main/VISUAL-V2-TEST-SCRIPT-BY-T-E-V-F-N'))()
+end)
+
+Tab2Section:NewButton("Tbao hub","Prison Life",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife"))()
+end)
+
+Tab2Section:NewButton("Prizz life","Prison Life",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
+end)
+
+Tab2Section:NewButton("Tiger Admin","Prison Life",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/h17s3/TIGERADMIN/main/TIGERADMINSCRIPTFREE'),true))()
+end)
+
+Tab3Section:NewButton("RinXHub","Blox Fruit",function()
+loadstring(game:HttpGetAsync"https://github.com/RinXHub/RinX/raw/main/output.lua")()
+end)
+
+Tab4Section:NewButton("fly gui v3","become you fly",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+Tab4Section:NewButton("Custom Keyboard","Just click it",function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/RedZenXYZ/4d80bfd70ee27000660e4bfa7509c667/raw/da903c570249ab3c0c1a74f3467260972c3d87e6/KeyBoard%2520From%2520Ohio%2520Fr%2520Fr"))()
+end)
+
+Tab5Section:NewButton("HitBox","add HitBox to player",function()
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local Hitbox = 
+Instance.new("TextButton")
+ 
+ScreenGui.Parent = game.CoreGui
+ 
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+main.Position = UDim2.new(0.40427351, 0, 0.34591195, 0)
+main.Size = UDim2.new(0, 100, 0, 100)
+main.Active = true
+main.Draggable = true
+ 
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.fromRGB(139,0,0)
+label.Size = UDim2.new(0, 100, 0, 20)
+label.Font = Enum.Font.SourceSans
+label.Text = "Hitbox Gui"
+label.TextColor3 = Color3.fromRGB(0, 0, 0)
+label.TextScaled = true
+label.TextSize = 5.000
+label.TextWrapped = true
+ 
+Hitbox.Name = "Hitbox"
+Hitbox.Parent = main
+Hitbox.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Hitbox.Position = UDim2.new(0.114285722, 0, 0.372448981, 0)
+Hitbox.Size = UDim2.new(0, 90, 0, 40)
+Hitbox.Font = Enum.Font.SourceSans
+Hitbox.Text = "Hitbox"
+Hitbox.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hitbox.TextSize = 40.000
+Hitbox.MouseButton1Down:connect(function()
+    _G.HeadSize = 20
+ 
+    _G.Disabled = true
+ 
+ 
+game:GetService('RunService').RenderStepped:connect(function()
+        if _G.Disabled then
+            for i,v in next, game:GetService('Players'):GetPlayers() do
+                if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+                    pcall(function()
+                        v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+                        v.Character.HumanoidRootPart.Transparency = 0.7
+                        v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black")
+                        v.Character.HumanoidRootPart.Material = "Neon"
+                        v.Character.HumanoidRootPart.CanCollide = false
+                    end)
+                end
+            end
+        end
+    end)
+end)
+end)
+
+
+Tab5Section:NewButton("Aimbot","aim your camera to player",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jonthedruger/LatvixDoc/script/idkgamenameforgot.lua",true))()
+end)
+
+Tab9Section:NewButton("YouTube Fathan Preset","SUBSCRIBE TO MY CHANNEL",function()
+end)
