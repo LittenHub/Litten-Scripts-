@@ -1,438 +1,65 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
-local Window = OrionLib:MakeWindow({Name = "Scacher Scripts ✅", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText="Loading..."})
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.CoreGui
 
---- Info
+local Frame1 = Instance.new("Frame") 
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.fromRGB(242,243,243)
+Frame1.BorderSizePixel = 5
+Frame1.BorderColor3 = Color3.fromRGB(0,0,255)
+Frame1.Position = UDim2.new(0.5,0,0.4)
+Frame1.Size = UDim2.new(0.3,0,0.4)
+Frame1.Active = true
+Frame1.Draggable = true
 
-local InfoTab = Window:MakeTab({
-	Name = "Info❗",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+local TextLabel1 = Instance.new("TextLabel") 
+TextLabel1.Parent = Frame1
+TextLabel1.BackgroundColor3 = Color3.fromRGB(242,243,243)
+TextLabel1.BackgroundTransparency = 1
+TextLabel1.Position = UDim2.new(0,0,0)
+TextLabel1.Size = UDim2.new(1.0,0,0.15)
+TextLabel1.Font = Enum.Font.Bangers
+TextLabel1.TextColor3 = Color3.fromRGB(0,0,255)
+TextLabel1.Text = "Jump Scripts"
+TextLabel1.TextSize = 18
+TextLabel1.TextScaled = true
+TextLabel1.TextWrapped = true
 
-InfoTab:AddParagraph("Info❗","if there is an emoticon ✅, it means the script has been tested.If there is an emoticon ❎, it means the script has not been tested.")
+local TextButton1 = Instance.new("TextButton") 
+TextButton1.Parent = Frame1
+TextButton1.BackgroundColor3 = Color3.fromRGB(0,0,255)
+TextButton1.BorderSizePixel = 1
+TextButton1.BorderColor3 = Color3.fromRGB(242,243,243)
+TextButton1.Position = UDim2.new(0.025,0,0.19)
+TextButton1.Size = UDim2.new(0.95,0,0.77)
+TextButton1.Font = Enum.Font.SourceSansSemibold
+TextButton1.TextColor3 = Color3.fromRGB(242,243,243)
+TextButton1.Text = "JUMP"
+TextButton1.TextSize = 18
+TextButton1.TextScaled = true
+TextButton1.TextWrapped = true
 
-InfoTab:AddButton({
-	Name = "Subscribe My Channel",
-	Callback = function()
-	       wait(1)
-      		setclipboard("https://youtube.com/@fathanpreset?si=QikoFfl3joiFDsjd")
-  	end    
-})
-
-InfoTab:AddButton({
-	Name = "Destroy this Gui",
-	Callback = function()
-	       wait(1)
-      		OrionLib:Destroy()
-  	end    
-})
-
---- Blade Ball Game
-
-local Tab = Window:MakeTab({
-	Name = "Blade Ball",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-local Section = Tab:AddSection({
-	Name = "Main"
-})
-
-OrionLib:MakeNotification({
-	Name = "Info❗",
-	Content = "✅Neo Scripts has been loaded✅",
-	Image = "rbxassetid://4483345998",
-	Time = 6
-})
-
-Tab:AddButton({
-	Name = "Visual V3.5 (no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5945467f3b9388503ca653c0ea49cba.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Bedol hub (have KeySystem)✅",
-	Callback = function()
-      		_G.UI_Size = 200
-              loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Plutonium hub (have KeySystem)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "FFJ V3 (no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallV3.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Rachub (no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/doitenroi1/Main/main/RacHub.lua"))();
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Ether hub (no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/6w0s/_6w0s/main/Loader.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Nexam hub (no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6af56c1753ac6679dee3acbd1fd952e5.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Astral hub (no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Augustzyzx/A-s-t-r-a-l/main/Loader_BladeBall.lua'))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Astral hub (an other Cracked)✅",
-	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Augustzyzx/A-s-t-r-a-l/main/Patrue_Revieve_Oldest.lua'))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "GhostWare (no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Exohacks/Ghostware-/main/Ghostware-V1'),true))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "LDS hub (not work)❎ ",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/limaspeedy/limaspeedy/main/HubLDS"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Venox hub (no key)✅",
-	Callback = function()
-      		loadstring(Game:HttpGet("https://raw.githubusercontent.com/Fsploit/venox-blade-ball-v1/main/K-A-T-S-U-S-F-S-P-L-O-I-T-I-S-A-F-U-R-R-Y%20MAIN%20V4"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "BleackHack (no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/devdoroz/bleachhack/main/newloader.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "DDZC V1.4 (have KeySystem)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/DenDenZYT/DenDenZ-s-Creations/main/DenDenZZZ's%20Creation%20FREE%20v1-4-obfuscated.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Nizus (no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/hypurzium/BladeBall/main/NizusLoader.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Chaotic (bug+no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/trashscript/main/chaotic.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Chaotic old Version (no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/trashscript/main/chaotic.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Phantom hub (out-date scripts+no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/KingGowthamIX/Phantom-Hub/main/BladeBall.txt"))()
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "----------------------------------------------------------------------------------------------"
-})
-
-Tab:AddButton({
-	Name = "Baka hub (key ↓↓↓)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/bankboi001fr/bankboi001fr/main/BakaHubBB.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "key for Baka hub",
-	Callback = function()
-	       wait(0.5)
-      		setclipboard("scripthubopfrfr")
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "----------------------------------------------------------------------------------------------"
-})
-
-Tab:AddButton({
-	Name = "Primordial V2.1 (no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/maninull/Roblox-Script/main/BladeBall_Loader.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Haloen V2 (no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/MjHavin/Haloen-V2-by-mj-and-savvy/main/Hyo"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Kairo V2.3 (no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/YTJosiahScripts/KAIRO-HUB/main/output-bHph0LP%20(1).txt"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "7Scripts (no key)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/r4mpage4/7Scripts/main/BladeBalls"))();
-  	end    
-})
-
---- My Auto Parry
-
-local Section = Tab:AddSection({
-	Name = "My Auto Parry (dont use it suck)"
-})
-
-Tab:AddToggle({
-    Name = "Auto Parry (just test)",
-    Default = false,
-    Callback = function(Value)
-       getgenv().f = Value
-           loadstring(game:HttpGet("https://raw.githubusercontent.com/DenDenZYT/DenDenZ-s-Open-Source-Collection/main/Auto%20Parry"))()
-    end
-})
-
-
- --- RideTrainCactusGame
-
-local RideTrainCactusTab = Window:MakeTab({
-	Name = "RideTrainCactus",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-local Section = RideTrainCactusTab:AddSection({
-	Name = "Main"
-})
-
-RideTrainCactusTab:AddButton({
-	Name = "Bac0nHck✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/RideTrainCactus"))("t.me/arceusxscripts")
-  	end    
-})
-
---- Prison Life Game
-
-local PrisonLifeTab = Window:MakeTab({
-	Name = "Prison Life",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-local Section = PrisonLifeTab:AddSection({
-	Name = "Admin Scripts"
-})
-
-PrisonLifeTab:AddButton({
-	Name = "Prizz Life (Admin)✅",
-	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
-  	end    
-})
-
-PrisonLifeTab:AddButton({
-	Name = "Tbao hub (Not Admin)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife"))()
-  	end    
-})
-
-local Section = PrisonLifeTab:AddSection({
-	Name = "Other Scripts ↓↓↓"
-})
-
-PrisonLifeTab:AddButton({
-	Name = "Remove All Door✅",
-	Callback = function()
-      		game.Workspace.Doors:Destroy()
-  	end    
-})
-
---- Misc
-
-local MiscTab = Window:MakeTab({
-	Name = "Misc",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-local Section = MiscTab:AddSection({
-	Name = "Main"
-})
-
-MiscTab:AddTextbox({
-	Name = "Change Your Speed✅",
-	Default = "Normal speed is 20",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end	  
-})
-
-MiscTab:AddTextbox({
-	Name = "Change Your Jump Power✅",
-	Default = "Normal jump power is 50",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-	end	  
-})
-
-MiscTab:AddButton({
-	Name = "Chat Bypasser✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/KAWAII-BYPASS/main/kawaii-bypass",true))()
-  	end    
-})
-
-local Section = MiscTab:AddSection({
-	Name = "Scripts hub"
-})
-
-MiscTab:AddButton({
-	Name = "Malay hub (🔥OP🔥)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/OpscriptPRO/OP-script/main/Malay%20hub%20V2"))()
-  	end    
-})
-
---- Backdoor
-
-local BackdoorTab = Window:MakeTab({
-	Name = "Backdoor",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-local Section = BackdoorTab:AddSection({
-	Name = "Main"
-})
-
-BackdoorTab:AddButton({
-	Name = "Lalol hub✅",
-	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
-  	end    
-})
-
---- Gun ball
-
-local GunballTab = Window:MakeTab({
-	Name = "Gun ball",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-local Section = GunballTab:AddSection({
-	Name = "Main"
-})
-
-local autoparry = false
-local ifr = false
-function shoot()
-if ifr then
-local args = {
-    [1] = {
-        ["success"] = false,
-        ["reason"] = "blocked"
-    }
-}
-
-game:GetService("ReplicatedStorage").resources.assets.balls.communication.network_remote_event:FireServer(unpack(args))
-game:GetService("ReplicatedStorage").resources.assets.balls.communication.network_remote_event:FireServer(unpack(args))
-end
-game:GetService("ReplicatedStorage").RemoteEvent:FireServer({["name"] = "defense",["origin"] = "balltargets"},{})
-end
-GunballTab:AddToggle({
-    Name = "Auto Parry",
-    Default = false,
-    Callback = function(Value)
-        autoparry = Value
-    end
-})
-GunballTab:AddToggle({
-    Name = "Infinity Range Parry",
-    Default = false,
-    Callback = function(Value)
-        ifr = Value
-    end
-})
-task.spawn(function()
-while task.wait() do
-if autoparry then
-task.spawn(shoot)
-task.spawn(shoot)
-task.spawn(shoot)
-end
-end
+TextButton1.MouseButton1Click:Connect(function() 
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
 end)
 
---- Death ball
+local UICorner1 = Instance.new("UICorner") 
+UICorner1.Parent = Frame1
+UICorner1.CornerRadius = UDim.new(0.1,0)
 
-local DeathballTab = Window:MakeTab({
-	Name = "Death ball",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-local Section = DeathballTab:AddSection({
-	Name = "Main"
-})
+local UIStroke1 = Instance.new("UIStroke") 
+UIStroke1.Parent = Frame1
+UIStroke1.Color = Color3.fromRGB(0,0,255)
+UIStroke1.Thickness = 4
+UIStroke1.Transparency = 0
 
-DeathballTab:AddButton({
-	Name = "Native (key ↓↓↓)✅",
-	Callback = function()
-      		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e9aa36da0de00de261431898fc324aa5.lua"))()
-  	end    
-})
+local ImageButton1 = Instance.new("ImageButton") 
+ImageButton1.Parent = Frame1
+ImageButton1.Position = UDim2.new(0.13,0,0.01)
+ImageButton1.Size = UDim2.new(0.16,0,0.165)
+ImageButton1.Image = "rbxassetid://17611933870"
 
-DeathballTab:AddButton({
-	Name = "Key for Native✅",
-	Callback = function()
-      		wait(0.5)
-      		setclipboard("Native: Death Ball: Free")
-  	end    
-})
-
-OrionLib:Init()
+local ImageButton1 = Instance.new("ImageButton") 
+ImageButton1.Parent = Frame1
+ImageButton1.Position = UDim2.new(0.72,0,0.01)
+ImageButton1.Size = UDim2.new(0.16,0,0.165)
+ImageButton1.Image = "rbxassetid://17611933870"
